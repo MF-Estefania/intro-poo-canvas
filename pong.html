@@ -4,10 +4,30 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Pong Game</title> 
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #gameContainer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #successText {
+            font-size: 30px;
+            font-family: Arial, sans-serif;
+            color: black;
+            margin-bottom: 10px; 
+        }
+
+        canvas {
+            border: 4px solid black;
+        }
+    </style>
 </head> 
 <body> 
-    <canvas id="gameCanvas" width="800" height="600"></canvas> 
+    <div id="gameContainer">
+        <div id="successText">Nivel medio</div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
     <script src="game.js"></script> 
 </body> 
 </html>
